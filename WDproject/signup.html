@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accounts.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sign up</title>
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            <a href="home.html"><img src="images/Logo1.svg"></a>
+        </div>
+        <div class="right">
+            <ul class="main-menu">
+                <li><a href="home.html">Home</a></li>
+                <li class="submenu-btn">
+                    <a href="shop.html">Shop</a>
+                    <ul class="submenu">
+                        <li><a href="shop.html">Accessories</a></li>
+                        <li><a href="shop.html">Men</a></li>
+                        <li><a href="shop.html">Women</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="submenu-btn"><a href="#">
+                        Account<i class="fa-solid fa-user" id="account-icon" style="padding-left: 10px;"></i>
+                        <ul class="submenu">
+                            <li><a href="signup.html">Sign up</a></li>
+                            <li><a href="signin.html">Sign in</a></li>
+                        </ul>
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="containerr">
+        <div class="signup-form-container">
+            <h1>Create your new account.</h1>
+            <form class="signup-form">
+                <div class="roww">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="roww">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="date" id="DOB" required>
+                </div>
+
+                <div class="roww">
+                    <select>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <div style="width: 300px; height: 40px; display: flex; justify-content: center; align-items: center;">
+                    <input style="width: 15px; height: 15px" type="checkbox" id="password" placeholder="Password" required>
+                    <label style="margin-bottom: 0 !important; margin-left: 10px;">Remember me</label>
+                    </div>
+                </div>
+
+                <button type="submit" id="submit">Log in</button>
+            </form>
+            <p>Already have an account? Login <a href="signin.html">here</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
